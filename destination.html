@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+        .container{
+            margin-top: 40px;
+        }
+
+        body {
+          font-family: cursive;
+        }
+
+        .flip-card {
+          background-color: transparent;
+          width: 300px;
+          height: 300px;
+          perspective: 1000px;
+        }
+
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          /* text-align: center; */
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+          background-color: #bbb;
+          color: black;
+        }
+
+        .flip-card-back {
+          background-color: #dee2e6;
+          color: black;
+          transform: rotateY(180deg);
+        }
+
+        .cards {
+          margin-top:30px;
+        }
+        .content{
+          margin-top: 40px;
+          margin-left: 10px;
+        }
+
+        .heading{
+            background-color: black;;
+            height: 100px;
+            color: white;
+            font-family: Papyrus;
+        }
+
+    </style>
+</head>
+<body>
+  <!-- <div class="d-flex align-items-center heading">
+     <a style="text-decoration: none;color:white" href="home.html"><h1 style=" margin-left: 20px;">Kerala Tourism</h1></a>
+  </div> -->
+  <div class="row d-flex align-items-center heading">
+    <div class="col-md-6">
+      <a style="text-decoration: none;color:white" href="home.html"><h1 style=" margin-left: 20px;">Kerala Tourism</h1></a>
+    </div>
+    <div class="col-md-6 d-flex justify-content-end pull-right">
+        <a href="home.html" title="Home"><i style="color:white;margin-right: 20px;" class="fa fa-home fa-2x"></i></a>
+    </div>     
+</div>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-4 cards">
+            <div class="flip-card">
+              <div class="flip-card-inner justify-content-center">
+                <div class="flip-card-front">
+                  <img src="./images/tvm.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Trivandrum</h3>
+                  <p class="content">Thiruvananthapuram also known as Trivandrum, is the capital and the largest city of the Indian state of Kerala. The city has <a href="tvm.html">Read more...</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 cards">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./images/kollam.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Kollam</h3>
+                  <p class="content">Kollam (erstwhile Quilon) is a southern district of Kerala, located 70 km north of the state’s capital Thiruvananthapuram. It is flanked by the Arabian sea on the west, Tamil Nadu on the east, Alapuzha and Pathanamthitta districts on the north and  <a href="kollam.html">Read more...</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 cards">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./images/pathanm.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Pathanamthitta</h3>
+                  <p class="content">More than fifty per cent of the total area of this district is covered by forests. Pathanamthitta is one of the most important pilgrim centers in Kerala and there are <a href="pathn.html">Read more...</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-4 cards">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./images/alap.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Alappuzha</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 cards">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./images/Kottayam.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Kottayam</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 cards">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./images/idukki.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Idukki</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 cards">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./images/eranakulam.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Ernakulam</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 cards">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./images/thrissur.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Thrissur</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 cards">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./images/palakkad.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Palakkad</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 cards">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./images/malappuram.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Malappuram</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 cards">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./images/kozhikode.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Kozhikode</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 cards">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./images/wayanad.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Wayanad</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 cards">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./images/kannur.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Kannur</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 cards">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./images/kasargod.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Kasargod</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>

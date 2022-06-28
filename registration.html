@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="validation.js"></script>
+
+</head>
+
+<body>
+
+
+  <form>
+
+    <section class="h-100" style="background-color:#dee2e6 ;">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card card-registration my-4">
+              <div class="row g-0">
+                <div class="col-xl-6 d-none d-xl-block">
+                  <img src="./images/visual-entity-FQ9An_dBi1E-unsplash.jpg" alt="Sample photo" class="img-fluid"
+                    style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                </div>
+                <div class="col-xl-6">
+                  <div class="card-body p-md-5 text-black">
+                    <h3 class="mb-5 text-uppercase"> SIGN UP
+                       <a href="home.html" title="Home"><i style="color:grey;" class="fa fa-home justify-content-end pull-right"></i></a>
+                       </h3>
+                   
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" id="form3Example1m" placeholder="First name"
+                            class="form-control form-control-lg" />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" id="form3Example1n" placeholder="Last Name"
+                            class="form-control form-control-lg" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form3Example8" placeholder="Address"
+                        class="form-control form-control-lg" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="phone" placeholder=" Phone Number"
+                        class="form-control form-control-lg"  onkeyup="validatePhone(document.getElementById('phone').value)" />
+                        <span for="error" id="phoneError"></span>
+                      </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="email" placeholder=" Email ID" class="form-control form-control-lg" onkeyup="validateEmail(document.getElementById('email').value)" />
+                      <span for="error" id="emailError"></span>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                     <input type="password" id="password" placeholder="Password" class="form-control form-control-lg" onkeyup="validatePassword(document.getElementById('password').value)"
+                     onkeydown="strengthChecker(document.getElementById('password').value)"/>
+                     <small class="help-block" id="password-text"></small>
+                     <span for="error" id="passwordError"></span>
+                     <!-- <span id="StrengthDisp" class="badge displayBadge"></span> -->
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="password" id="form3Example97" placeholder="Confirm Password"
+                        class="form-control form-control-lg" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <p>Already have an Account? <a href="login.html">Login!!</a></p>
+                  </div>
+
+                    <div class="d-flex justify-content-center pt-3">
+                      <button type="button" class="btn btn-success btn-lg ms-2 align-items-center"> Submit form
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+
+</html>
+</form>
+
+</body>
+
+</html>
